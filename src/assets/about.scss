@@ -1,0 +1,60 @@
+@import "./_mix";
+
+.about{
+    max-width: 1140px;
+    margin: 20px auto;
+    // height: auto;
+    &-h{
+        @include fnt($txt-clr, $fml:'Arial',$weight:700,$size:35px,$height:40px);
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: left;
+        @media (max-width:992px) {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            
+        }
+    }
+    &-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        &-img{
+            margin: 0 15px 0 0;
+            &-in{
+                
+                background: $bg-b;
+                height: 250px;
+                width: 100%;
+               
+                @media (max-width:992px) {
+                    width:230px;
+                } 
+               
+            } 
+            @media (min-width:992px) {
+                flex: 0 0 32.333333%;
+                max-width: 32.333333%;
+            }         
+        }
+        &-txt{
+            color: $f-clr;
+            @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:20px,$height:23px);
+            height: 250px;
+            text-align: justify;
+            overflow: hidden;
+
+            @media (min-width:992px) {
+                flex: 0 0 65.666667%;
+                max-width: 65.666667%;
+            }
+            @media (max-width:992px) {
+                max-width: 45.666667%;
+                height: auto;
+            }
+        }
+    }
+}

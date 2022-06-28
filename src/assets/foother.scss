@@ -1,0 +1,80 @@
+@import "./_mix";
+
+.foother {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    
+    div{
+        position: relative;
+        width: 100%;
+        margin: 38px auto;
+        @media (min-width:992px) {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%
+        }
+    }
+
+    &-log{
+        @include fnt($txt-clr, $fml:'Roboto', $weight:400, $size:38px,$height:45px);
+        div{
+            display: inline-flex;
+            justify-content: space-around;
+        }
+        a{          
+            text-decoration: none;
+            img{
+                width: 35px;
+                height: 35px;
+            } 
+        }
+    }
+
+    &-inf{      
+        text-align: left;
+        p{
+            @include fnt($ft-clr, $fml:'Arial', $weight:700, $size:18px, $height:21px);
+  
+        }
+
+        ul{
+            list-style: none;
+            margin: 10px -35px;
+            li{
+                @include fnt($ft-clr, $fml:'Arial', $weight:400, $size:16px, $height:18px);              
+                margin: 15px 0;
+            }
+        }
+        @media (max-width:992px) {
+            text-align: center;
+        }
+    }
+   
+    
+    &-btm{
+        border-top: 2px solid #535353;
+        padding: 20px;
+        ul{
+            list-style: none;
+            margin-left: 9%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            
+            li{
+                margin: 0 20px;
+                a{
+                    text-decoration: none;
+                    color: $main-color;
+                    img{
+                        margin: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+  
+
+
+}

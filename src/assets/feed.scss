@@ -1,0 +1,68 @@
+
+@import "./_mix";
+
+.feedback{
+    margin-top: 30px;
+    @extend .flx;  
+ 
+    &-l{
+
+        background: $bg-f;
+        font-family: 'Arial';
+        padding: 20px;
+
+        img{
+            width: 50px;
+        }
+       
+        p{
+            @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:22px,$height:25px);
+        }
+
+        @media (min-width:992px) {
+            flex: 0 0 41.333333%;
+            max-width: 41.333333%;
+        }
+        @media (max-width:992px) {
+            
+            width: 100%;
+        }
+
+    }
+
+
+    &-r{
+        background: #FFFFFF;
+        border: 1px solid #CED3CA;
+        &-h{
+            @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:35px,$height:40px);
+            @media (max-width:992px) {
+                margin-top: 10px;
+            }
+        }
+
+        &-inp{
+            width: 80%;
+            margin: 10px auto;
+
+            input{
+                border-radius: 3px;
+                margin: 10px 0;
+                height: 50px;
+                @extend .in;
+                
+            }
+            textarea {
+                height: 88px;
+                @extend .in;
+            }
+        }
+        
+        @media (min-width:992px) {
+            flex: 0 0 54.666667%;
+            max-width: 54.666667%;
+        }
+
+    }
+
+}

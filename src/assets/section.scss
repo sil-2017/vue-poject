@@ -1,0 +1,109 @@
+@import "./_mix";
+.grid{
+    margin: 10px auto;
+    @extend .flx; 
+    max-width: 1200px;
+   
+    &-col{
+        
+        position: relative;
+        flex-wrap: wrap;
+        @media  (min-width: 995px) {
+            flex: 0 0 50%;
+            max-width: 50%
+            // width:50%;
+        }
+
+        &-r{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+
+            p:first-of-type{
+                @include fnt($ft-clr, $fml:'Arial',$weight:700,$size:30px,$height:44px);
+                letter-spacing: 0.820859px;            
+                text-align: left;
+                span{
+                    display: block;
+                }
+                
+            }
+            @media  (max-width: 995px) {
+                align-items: center;
+                align-self: center;
+            }
+        }
+    
+        
+        &-cnt{
+            
+            position: relative;
+            width: 320px;
+           
+            .grid-col-cnt_img{
+                width:320px;
+                height:330px;
+                background-image:url("./img/imageremovebg.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                z-index: 2;
+                position: absolute;
+                top:20px;
+                left: 90px;
+                transition: all 1s ease;
+                @media (max-width:920px) {
+                    width:250px;
+                }
+                @media  (max-width:700px) {
+                    width:200px;
+                }
+            }
+                .bf{
+                    // position: relative;
+                   
+                    img{
+                        width:320px;;
+                        height: auto;
+                        position: absolute;
+                        top:-15px;
+                        left:429px;
+                        z-index: 1;
+                        transition: all 1s ease;
+                        @media (max-width:920px) {
+                            width:250px;
+                            top:-5px;
+                            left:319px;
+                        }
+                        @media  (max-width: 605px) {
+                            width:200px;
+                            top:-15px;
+                            left:309px;
+                        }
+                    }
+                }
+                
+            .img{
+                width: 380px;
+                height: auto;
+                position: absolute;
+                left:240px;
+                // bottom:-520px;
+                top: 130px;
+                z-index:4;
+                transition: all 1s ease;
+                @media (max-width:920px) {
+                    width:280px;
+                    left:150px;
+                    top: 80px;
+                }
+                @media  (max-width: 605px) {
+                    width:220px;
+                    left:200px;
+                    top: 100px;
+                }
+            } 
+        }
+    }
+
+    
+}

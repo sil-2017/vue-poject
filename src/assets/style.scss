@@ -1,0 +1,73 @@
+@import "./variable.scss";
+@import "./navbar.scss";
+@import "./section.scss";
+@import "./sertif.scss";
+@import "./types.scss";
+@import "./menu.scss";
+@import "./about.scss";
+@import "./feed.scss";
+@import "./foother.scss";
+@import "./models.scss";
+@import "./_mix.scss";
+
+* {
+    // box-sizing: border-box;
+}
+
+
+.ctr {
+    max-width: 1140px;
+    margin: 20px auto;
+}
+
+body{
+    background: $main-color;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.btn{
+    width: 174px;
+    height: 40px;
+    border: none;
+    // border: 1px solid #000000;
+    border-radius: 5px;
+    background: #DAA823;
+    margin: 20px 0;
+}
+// mixiny u miacnelu dzevy
+
+//   @mixin btn($color) {
+//     width: 224px;
+//     height: 50px;
+//     border-radius: 5px;
+//     background: $color;
+//  }
+//  @include btn($color);
+
+// .container{
+//     display: flex;
+//     flex-direction: column;
+// }
+.mrg{
+    margin: 100px auto;
+    position: relative;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+   margin: 10px auto;
+
+  }
+  .bg{
+    // width: 140%;
+    background: #1A1A1A;
+  }
