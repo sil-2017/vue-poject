@@ -1,11 +1,14 @@
 <template>
   <div class="app">
 
+  <my-humburger></my-humburger>
+    
     <navigation></navigation>
 
     <my-section></my-section>
-     
+        
     <my-sertificed></my-sertificed>
+    
 
      <!-- <types></types> -->
 
@@ -18,40 +21,23 @@
     <feedback> </feedback>
 
 <!-- <typesDetail></typesDetail> -->
-
+ 
      <foother></foother>
      
   </div>
 </template>
 
 <script>
+import MyHumburger from '@/components/UI/MyHumburger';
 
 export default {
   components:{
-    
+       MyHumburger,
+        
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

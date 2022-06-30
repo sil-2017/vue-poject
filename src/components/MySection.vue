@@ -4,6 +4,7 @@
             <div class="grid-col ">
                 <div class="grid-col-r">
                     <p><span>Պատրաստում ենք ցանկացած</span> <span>տեսակի թերմո պայուսակներ</span></p>
+                     
                     <!-- <p>
                         Պատրաստում ենք ցանկացած տեսակի թերմո պայուսակներ
                         
@@ -13,6 +14,7 @@
                         
                     </p> -->
                     <my-button>Մանրամասն</my-button>
+                    
                  </div>
             </div>
             <div class="grid-col">
@@ -32,8 +34,10 @@
 </template>
 
 <script>
+
 export default {
     name: "MySection",
+    
 
 };
 </script>

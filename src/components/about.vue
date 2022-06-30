@@ -1,6 +1,6 @@
 <template>
 <div class="about">
-    <div class="about-h">Մեր Մասին</div>
+    <div class="about-h">Մեր <span>Մասին</span></div>
     <div class="about-cont">
         <div class="about-cont-img">
             <div class="about-cont-img-in"></div>

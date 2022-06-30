@@ -9,6 +9,9 @@
         margin-left: 0;
         margin-bottom: 15px;
         text-align: left;
+        span{
+            color: $ft-clr; 
+        } 
         @media (max-width:992px) {
             text-align: center;
             font-size: 25px;
@@ -30,15 +33,20 @@
                 height: 250px;
                 width: 100%;
                
-                @media (max-width:992px) {
-                    width:230px;
-                } 
+                // @media (max-width:992px) {
+                //     width:230px;
+                // } 
                
             } 
             @media (min-width:992px) {
                 flex: 0 0 32.333333%;
                 max-width: 32.333333%;
-            }         
+            } 
+            @media (max-width:992px) {
+                margin: 10px auto;
+                width:100%;
+
+            }       
         }
         &-txt{
             color: $f-clr;
@@ -52,8 +60,10 @@
                 max-width: 65.666667%;
             }
             @media (max-width:992px) {
-                max-width: 45.666667%;
                 height: auto;
+                width: 100%;
+                text-align:justify;;
+                padding: 18px;
             }
         }
     }

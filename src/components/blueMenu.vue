@@ -1,5 +1,6 @@
 <template>
   <div class="menu">
+      
     <div>
         <img src="../assets/img/car.png">
         <p>

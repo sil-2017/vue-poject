@@ -4,6 +4,8 @@
 .feedback{
     margin-top: 30px;
     @extend .flx;  
+    justify-content: center;
+    justify-content: baseline;
  
     &-l{
 
@@ -11,12 +13,21 @@
         font-family: 'Arial';
         padding: 20px;
 
-        img{
-            width: 50px;
-        }
-       
-        p{
-            @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:22px,$height:25px);
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                width: 40px;   
+                margin: 23px auto;   
+            }
+           
+            p{
+                @include fnt($main-color, $fml:'Arial',$weight:400,$size:18px,$height:25px);
+                text-align: center;
+            }
+
         }
 
         @media (min-width:992px) {
@@ -34,10 +45,16 @@
     &-r{
         background: #FFFFFF;
         border: 1px solid #CED3CA;
+        text-align: center;
         &-h{
             @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:35px,$height:40px);
+            span{
+                color: $ft-clr; 
+            } 
             @media (max-width:992px) {
                 margin-top: 10px;
+                font-size:25px;
+                font-weight: 700;
             }
         }
 
@@ -62,6 +79,7 @@
             flex: 0 0 54.666667%;
             max-width: 54.666667%;
         }
+       
 
     }
 

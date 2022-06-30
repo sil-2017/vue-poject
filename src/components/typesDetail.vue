@@ -19,11 +19,9 @@
             </div>
         </div>
         <div class="models-block-btm">
-
              <div class="models-block-btm-img">
                 <img src="../assets/img/image8.png"/>
             </div>
-
             <div class="models-block-btm-inf">
                 <div class="models-block-btm-inf-b">
                      <p>Թերմո<span>Տոպրակ</span></p>
@@ -35,8 +33,7 @@
                     <span> {{state.price}}</span>
                 </div>
                 </div>
-            </div>
-           
+            </div>          
         </div>
     </div>
 </template>
