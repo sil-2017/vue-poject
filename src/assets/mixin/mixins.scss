@@ -15,4 +15,16 @@
     height:$height;
 }
 
+
+  @mixin btn($color) {
+    background: $color;
+    width: 174px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+ }
+
+
+
+//  @include btn($color);
 // @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:18px,$height:23px);

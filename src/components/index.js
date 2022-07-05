@@ -1,6 +1,6 @@
 import Navigation from '@/components/navigation';
 import MySection from '@/components/MySection';
-import Types from '@/components/types';
+// import Types from '@/components/types';
 import BlueMenu from '@/components/blueMenu';
 import About from '@/components/about';
 import feedback from '@/components/feedback';
@@ -11,7 +11,7 @@ import typesDetail from '@/components/typesDetail';
 export default[
     Navigation,
     MySection,
-    Types,
+    // Types,
     BlueMenu,
     About,
     feedback,

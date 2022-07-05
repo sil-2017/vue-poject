@@ -9,7 +9,6 @@
     @media (max-width:992px) {
         margin-left: 0%;
     }
-   
     
     div{
         position: relative;
@@ -24,6 +23,7 @@
     &-log{
         
         @include fnt($main-color, $fml:'Roboto', $weight:400, $size:38px,$height:45px);
+
         div{
             display: inline-flex;
             justify-content: space-around;
@@ -31,6 +31,7 @@
                 justify-content:space-evenly;
             }
         }
+
         a{          
             text-decoration: none;
             img{
@@ -38,6 +39,7 @@
                 height: 35px;
             } 
         }
+
         p{
             text-align:left;
             margin-left: 5%;
@@ -45,8 +47,7 @@
             @media (max-width:992px) {
                 text-align:center;
                 margin:0;
-            }
-            
+            } 
         }
        
     }
@@ -70,14 +71,13 @@
             text-align: center;
         }
     }
-   
-    
-
 }
 
 .foother-btm{
+
     border-top: 2px solid #535353;
     padding: 20px;
+
     ul{
         list-style: none;
         margin-left: 9%;

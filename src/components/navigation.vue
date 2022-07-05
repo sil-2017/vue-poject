@@ -16,8 +16,7 @@
             </li>
         </ul>
         </div>
-      <div class="header__sel"> <p> Հայ </p> </div>     
-    
+      <div class="header__sel"> <p> Հայ </p> </div>      
   </div>
 </template>
 

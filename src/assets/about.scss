@@ -3,7 +3,7 @@
 .about{
     max-width: 1140px;
     margin: 20px auto;
-    // height: auto;
+    
     &-h{
         @include fnt($txt-clr, $fml:'Arial',$weight:700,$size:35px,$height:40px);
         margin-left: 0;
@@ -15,10 +15,10 @@
         @media (max-width:992px) {
             text-align: center;
             font-size: 25px;
-            font-weight: 700;
-            
+            font-weight: 700;         
         }
     }
+
     &-cont{
         display: flex;
         flex-direction: row;
@@ -32,11 +32,6 @@
                 background: $bg-b;
                 height: 250px;
                 width: 100%;
-               
-                // @media (max-width:992px) {
-                //     width:230px;
-                // } 
-               
             } 
             @media (min-width:992px) {
                 flex: 0 0 32.333333%;
@@ -65,6 +60,7 @@
                 text-align:justify;;
                 padding: 18px;
             }
+            
         }
     }
 }

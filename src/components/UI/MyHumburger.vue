@@ -1,12 +1,18 @@
 <template>
- <section class="top-nav">
+
+ <div class="nav">
     <div class="header__logo__text" >
       Logo
     </div>
-    <input id="menu-toggle" type="checkbox" />
+
+    <input id="menu-toggle" type="checkbox"/>
+
     <label class='menu-button-container' for="menu-toggle">
+
     <div class='menu-button'></div>
-  </label>
+
+    </label>
+
     <ul class="menu">
        <li
             v-for="(title,index) in titles"
@@ -15,7 +21,8 @@
             {{title}}
             </li>
     </ul>
-  </section>
+
+  </div>
 </template>
 
 <script>
@@ -36,11 +43,11 @@
 </script>
 
 <style scoped>
-  .top-nav {
+  .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-   justify-content:space-around; 
+    justify-content:space-around; 
     color: rgb(16, 15, 15); 
     height: 50px;
     z-index: 999;
@@ -114,7 +121,7 @@
   }
 
   @media (min-width: 900px) {
-    .top-nav{
+    .nav{
       display: none;
     }
 
